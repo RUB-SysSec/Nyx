@@ -1,0 +1,20 @@
+[package]
+name = "rust_fuzzer"
+version = "0.1.0"
+authors = ["coco <cornelius@hexgolems.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fuzz_runner={path="../fuzz_runner"}
+structured_fuzzer={path="../structured_fuzzer"}
+helpers={path="../helpers"}
+config={path="../config"}
+core_affinity="0.5.10"
+serde ="1.0.104"
+serde_derive ="1.0.104"
+rmp-serde ="0.14.3"
+ron = "0.5.1"
+clap="2.33.0"
+rand = "0.7.3"

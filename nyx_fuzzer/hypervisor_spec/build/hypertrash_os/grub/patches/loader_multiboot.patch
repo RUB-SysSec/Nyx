@@ -1,0 +1,4 @@
+233c233
+<       grub_puts_ (N_("WARNING: no console will be available to OS"));
+---
+>       //grub_puts_ (N_("WARNING: no console will be available to OS"));

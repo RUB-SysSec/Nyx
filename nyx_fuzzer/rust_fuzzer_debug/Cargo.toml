@@ -1,0 +1,14 @@
+[package]
+name = "rust_fuzzer_debug"
+version = "0.1.0"
+authors = ["Sergej Schumilo <sergej@schumilo.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fuzz_runner={path="../fuzz_runner"}
+structured_fuzzer={path="../structured_fuzzer"}
+helpers={path="../helpers"}
+config={path="../config"}
+core_affinity="0.5.10"

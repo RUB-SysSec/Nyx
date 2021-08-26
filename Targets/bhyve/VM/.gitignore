@@ -1,0 +1,12 @@
+bhyve.qcow2
+FreeBSD-11.3-RELEASE-amd64-disc1.iso
+
+pre_snapshot/INFO.txt
+pre_snapshot/fast_snapshot.mem_dump
+pre_snapshot/fast_snapshot.mem_meta
+pre_snapshot/fast_snapshot.qemu_state
+pre_snapshot/fs_cache.meta
+pre_snapshot/fs_drv_bhyve.qcow2.khash
+pre_snapshot/fs_drv_bhyve.qcow2.pcow
+pre_snapshot/global.state
+pre_snapshot/ready.lock

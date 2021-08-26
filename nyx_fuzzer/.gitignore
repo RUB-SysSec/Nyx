@@ -1,0 +1,4 @@
+hypertrash_spec/build/hypertrash_os/iso/hypertrash_os_bios.iso
+.vscode
+syzkaller_spec/__pycache__/
+syzkaller_spec/build/cdrom_agent

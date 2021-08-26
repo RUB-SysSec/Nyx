@@ -1,0 +1,25 @@
+(
+    runner: QemuSnapshot((
+        qemu_binary: "/home/kafl/release/QEMU-PT/qemu/x86_64-softmmu/qemu-system-x86_64",
+        hda: "/home/kafl/release/Targets/bhyve/VM/bhyve.qcow2",
+        sharedir: "/home/kafl/release/Targets/bhyve/sharedir/",
+        presnapshot: "/home/kafl/release/Targets/bhyve/VM/pre_snapshot/",
+	snapshot_path: DefaultPath,
+	//snapshot_path: Reuse("/snapshot"),
+        debug: false,
+    )),
+    fuzz: (
+        spec_path: "/home/kafl/release/Targets/bhyve/sharedir/spec.msgp",
+        workdir_path: "/tmp/workdir_bhyve/",
+        bitmap_size: 65536,
+        mem_limit: 1024,
+        time_limit: (
+            secs: 0,
+            nanos: 800000000,
+        ),
+        target_binary: None,
+        threads: 4,
+        thread_id: 0,
+        cpu_pin_start_at: 0,
+    ),
+)

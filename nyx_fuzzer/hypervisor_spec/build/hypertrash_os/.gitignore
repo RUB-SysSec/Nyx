@@ -1,0 +1,5 @@
+src/*.o
+src/asm/*.o
+bin/hypertrash_os.bin  
+bin/logo.o
+tesseract/*.o

@@ -1,0 +1,14 @@
+595,596c595,597
+< 	  return grub_error (GRUB_ERR_BAD_ARGUMENT,
+< 			     N_("no suitable video mode found"));
+---
+>     return GRUB_ERR_BAD_ARGUMENT;
+> 	  //return grub_error (GRUB_ERR_BAD_ARGUMENT,
+> 		//	     N_("no suitable video mode found"));
+759,760c760,762
+<   return grub_error (GRUB_ERR_BAD_ARGUMENT,
+< 		     N_("no suitable video mode found"));
+---
+>   return GRUB_ERR_BAD_ARGUMENT;
+>   //return grub_error (GRUB_ERR_BAD_ARGUMENT,
+> 	//	     N_("no suitable video mode found"));

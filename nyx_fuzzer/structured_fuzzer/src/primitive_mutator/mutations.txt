@@ -1,0 +1,20 @@
+Text based mutations
+
+
+  size_t Mutate_Custom(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by invoking user-provided crossover.
+  size_t Mutate_CustomCrossOver(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by shuffling bytes.
+  size_t Mutate_ShuffleBytes(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by erasing bytes.
+  size_t Mutate_EraseBytes(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by inserting a byte.
+  size_t Mutate_InsertByte(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by inserting several repeated bytes.
+  size_t Mutate_InsertRepeatedBytes(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by chanding one byte.
+  size_t Mutate_ChangeByte(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by chanding one bit.
+  size_t Mutate_ChangeBit(uint8_t *Data, size_t Size, size_t MaxSize);
+  /// Mutates data by copying/inserting a part of data into a different place.
+  size_t Mutate_CopyPart(uint8_t *Data, size_t Size, size_t MaxSize);

@@ -1,0 +1,24 @@
+(
+    runner: ForkServer((
+        args: [
+            "target",
+            "--test_arg",
+        ],
+        hide_output: true,
+        input_size: 262144,
+        env: [],
+    )),
+    fuzz: (
+        spec_path: "../hypertrash_spec/hexaschrott_freebsd.msgp",
+        workdir_path: "/tmp/fuzz_struct_test",
+        bitmap_size: 65536,
+        mem_limit: 1024,
+        time_limit: (
+            secs: 0,
+            nanos: 800000000,
+        ),
+        target_binary: None,
+        threads: 3,
+        thread_id: 0,
+    ),
+)

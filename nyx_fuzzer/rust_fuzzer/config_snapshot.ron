@@ -1,0 +1,22 @@
+(
+    runner: QemuSnapshot((
+        qemu_binary: "/home/kafl/QEMU-PT/x86_64-softmmu/qemu-system-x86_64",
+        hda: "/home/kafl/VMs/freebsd_11_3_asan/freebsd_11_3_asan.qcow2",
+        sharedir: "/home/kafl/VMs/freebsd_11_3_asan/freebsd_11_3_asan_sharedir/",
+        presnapshot: "/home/kafl/VMs/freebsd_11_3_asan/freebsd_11_3_asan_pre_snapshot/",
+        debug: true,
+    )),
+    fuzz: (
+        spec_path: "../hypertrash_spec/hexaschrott_freebsd.msgp",
+        workdir_path: "/tmp/fuzz_struct_test",
+        bitmap_size: 65536,
+        mem_limit: 1024,
+        time_limit: (
+            secs: 0,
+            nanos: 800000000,
+        ),
+        target_binary: None,
+        threads: 3,
+        thread_id: 0,
+    ),
+)
