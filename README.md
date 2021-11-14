@@ -18,7 +18,7 @@ url = {https://www.usenix.org/conference/usenixsecurity21/presentation/schumilo}
 
 This release is based on our academic prototype implementation from early 2020 and it is quite outdated and has several known bugs, specific limitations and gets unstable in specific use cases (e.g. this version does not use the more stabile [libxdc](https://github.com/nyx-fuzz/libxdc) Intel-PT decoder). 
 
-If you are interested in using Nyx or one of Nyx's components for bug hunting or to build your project upon, we are recommending to use [Nyx++](https://nyx-fuzz.com) instead. Nyx++ is a mainted, improved version of Nyx with all of its latest and greatest features. Other than that, we are not planning to maintain this prototype implementation anymore. So please do yourself a favor and use Nyx++ instead.
+If you are interested in using Nyx or one of Nyx's components for bug hunting or to build your project upon, we are recommending to use [The public version of Nyx](https://nyx-fuzz.com) instead. It is a mainted, improved version of Nyx with all of its latest and greatest features. Other than that, we are not planning to maintain this prototype implementation anymore. So please do yourself a favor and use the real release of Nyx instead.
 
 ## Setup:
 
